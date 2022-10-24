@@ -47,7 +47,8 @@ memchr = "2.3"
 uuid = { version = "1.0", optional = true }
 smallvec = "1.6.1"
 cast = { version = "0.3", features = ["std"] }
-arrow = { version = "25", default-features = false, features = ["prettyprint", "ffi"] }
+arrow = { version = "25", features = ["default", "prettyprint", "ffi", "ipc_compression"]}
+parquet = { version = "25" }
 rust_decimal = "1.14"
 strum = { version = "0.24", features = ["derive"] }
 r2d2 = { version = "0.8.9", optional = true }
